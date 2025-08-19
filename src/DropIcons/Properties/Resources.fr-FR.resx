@@ -115,90 +115,90 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddImages" xml:space="preserve">
-    <value>Hinzufügen</value>
+    <value>Ajouter images</value>
   </data>
   <data name="Images" xml:space="preserve">
-    <value>Bilder</value>
+    <value>Images</value>
   </data>
   <data name="Image" xml:space="preserve">
-    <value>Bild</value>
+    <value>Image</value>
   </data>
   <data name="ImageFiles" xml:space="preserve">
-    <value>Bilddateien</value>
+    <value>Fichiers image</value>
   </data>
   <data name="ChooseSameFolder" xml:space="preserve">
-    <value>Gleichen Ordner auswählen</value>
+    <value>Choisir le même dossier</value>
   </data>
   <data name="GenerateTinyIcon" xml:space="preserve">
-    <value>Kleines Symbol erzeugen</value>
+    <value>Générer une petite icône</value>
   </data>
   <data name="LanguageEnglish" xml:space="preserve">
-    <value>Sprache: English</value>
+    <value>Langue: English</value>
   </data>
   <data name="ChangeTheme" xml:space="preserve">
-    <value>Thema Ändern</value>
+    <value>Changer de thème</value>
   </data>
   <data name="Options" xml:space="preserve">
-    <value>Optionen:</value>
+    <value>Options:</value>
   </data>
   <data name="About" xml:space="preserve">
-    <value>Über:</value>
+    <value>À propos de:</value>
   </data>
   <data name="LanguageEspañol" xml:space="preserve">
-    <value>Sprache: Español</value>
+    <value>Langue: Español</value>
   </data>
   <data name="LanguageGerman" xml:space="preserve">
-    <value>Sprache: Deutsch</value>
+    <value>Langue: Deutsch</value>
   </data>
   <data name="UtilityToConvertImagesToIcons" xml:space="preserve">
-    <value>Utility to convert images to icons (.ico)</value>
+    <value>Utilitaire pour convertir des images en icônes</value>
   </data>
   <data name="onvert" xml:space="preserve">
-    <value>onvertieren</value>
+    <value>onvertir</value>
   </data>
   <data name="pply" xml:space="preserve">
-    <value>bernehmen</value>
+    <value>ppliquer</value>
   </data>
   <data name="ancel" xml:space="preserve">
-    <value>bbrechen</value>
+    <value>nnuler</value>
   </data>
   <data name="AboutTitle" xml:space="preserve">
-    <value>Über</value>
+    <value>À proposTitre</value>
   </data>
   <data name="DisableTopmost" xml:space="preserve">
-    <value>Im Vordergrund deaktivieren</value>
+    <value>Désactiver au premier plan</value>
   </data>
   <data name="EnableTopmost" xml:space="preserve">
-    <value>Im Vordergrund aktivieren</value>
+    <value>Activer au premier plan</value>
   </data>
   <data name="Icons" xml:space="preserve">
     <value>Format</value>
   </data>
   <data name="Next" xml:space="preserve">
-    <value>Nächstes   🢖🢖</value>
+    <value>Suivant   🢖🢖</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>🢔🢔   Zurück</value>
+    <value>🢔🢔   Précédent</value>
   </data>
   <data name="Multiple" xml:space="preserve">
-    <value>Mehrere</value>
+    <value>Multiple</value>
   </data>
   <data name="C_onvert" xml:space="preserve">
-    <value>K</value>
+    <value>C</value>
   </data>
   <data name="A_pply" xml:space="preserve">
-    <value>Ü</value>
-  </data>
-  <data name="C_ancel" xml:space="preserve">
     <value>A</value>
   </data>
+  <data name="C_ancel" xml:space="preserve">
+    <value>C</value>
+  </data>
   <data name="Color" xml:space="preserve">
-    <value>Farbe</value>
+    <value>Couleur</value>
   </data>
   <data name="LanguageChinese" xml:space="preserve">
-    <value>Sprache: 简体中文</value>
+    <value>Langue: 简体中文</value>
   </data>
   <data name="LanguageFrench" xml:space="preserve">
-    <value>Sprache: French</value>
+    <value>Langue: French</value>
   </data>
 </root>

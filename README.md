@@ -12,13 +12,18 @@
 </p>
 
 <p align="center">
-<a href="README.md">English</a> :speech_balloon: <a href="README-es.md">Español</a>
+<b>• Supported Languages •</b>
+</BR>
+<img width="21" height="15" alt="US" src="https://github.com/user-attachments/assets/b5e6447c-6845-4b8d-b3df-ee45bb465706"/>‎ ‎ ‎ <img width="21" height="15" alt="MX" src="https://github.com/user-attachments/assets/0bc0851a-228a-4df2-aa0d-ba2bdc4c7b18"/>‎ ‎ ‎ <img width="21" height="15" alt="CN" src="https://github.com/user-attachments/assets/64983f24-791e-4141-a256-032940058f65"/>‎ ‎ ‎ <img width="21" height="15" alt="DE" src="https://github.com/user-attachments/assets/c07cb917-60c3-4aed-88ae-82e223ea7c49"/>‎ ‎ ‎ <img width="21" height="15" alt="FR" src="https://github.com/user-attachments/assets/14a3b116-da55-40b6-9a78-71a75fa4de4a"/>
+</p>
+
+<p align="center">
+<a href="README.md">README - English</a> :speech_balloon: <a href="README-es.md">README - Español</a>
 </p>
 
 ## Features
 * Clean and intuitive interface.
 * Quickly convert multiple images to icons at once, with Drag and Drop feature.
-* Translation into English, Spanish, German and Simplified Chinese.
 * Support for .png .jpg .jpeg .jfif .bmp .gif and .svg images.
 * Customize theme color.
 * Number of images to convert, subtracting three that are displayed as preview.
@@ -47,7 +52,7 @@ By clicking on the upper Info button, a new window will appear in which you can:
 
 - **Change language:** In the **Language** section below, click on the little arrows icon to change between English, Español or Deutsch. Finally click on the return button to apply and see changes.
 
-- **Format:** Clicking on `Format` will display a menu with two options to choose the sizes that will be included within the icon: **Multiple** generates a high quality icon that include all necessary sizes such as 16, 32, 48, 64, 128 and 256 pixels, although the output dimensions will be 16px. The last option is **256 px** which generates an icon with a single size but look pixelated in the details view.
+- **Format:** Clicking on `Format` will display a menu with two options to choose the sizes that will be included within the icon: **Multiple** generates a high quality icon that include all necessary sizes such as 16, 32, 48, 64, 128 and 256 pixels, although the output dimensions will be 16px. The last two options are **256 px** and **512 px**, which generate an icon with only that size.
      >Note: If the **Generate tiny icon** switch is on, a small icon will be created regardless of its format.
      
 - **Third-party content:** On the left side are the names of each library, project, icons or fonts that were used, click one to read its license and author(s), as well as a short description. You can click on the clip icon to go to each repository/official site and change pages with **Next 🢖🢖** or **🢔🢔 Back**.
@@ -57,7 +62,7 @@ By clicking on the upper Info button, a new window will appear in which you can:
 To choose whether Drop Icons is on top of all windows (Topmost) or not, right-click anywhere in the main window and choose Enable Topmost or Disable Topmost.
 
 ## Options
-<a href="#"><img src="docs/assets/Drop-Icons-Options-v2.gif"/></a>
+<a href="#"><img src="docs/assets/Drop-Icons-Options-v3.gif"/></a>
 
 ## Installer
 To compile the installer you need [Inno Setup](https://jrsoftware.org/isinfo.php), the files are located in the [installer src](/installer%20src) folder. You just need to open the project (Installer.iss) and compile it, unless you want to make a change. When finished, it will leave a folder called Output in the same location.
@@ -114,13 +119,14 @@ Drop Icons is based on [Iconizer](https://github.com/willnode/Iconizer) under [M
 
 *You can find all licenses [here](/src/DropIcons/Docs).*
 
-## What's new?
-`Version 3.0.0` now has accurate vector conversion. Previously, empty margins weren't detected, resulting in an icon with scaled dimensions: [📍Image cropped](https://github.com/genesistoxical/drop-icons/issues/4).
-
-The loading spinner is displayed when one or more images larger than 2MB are added, preventing the interface from looking frozen.
-
 <br>
 
+✨ Special thanks to the translators:
+* German Translation by **uDEV2019**.
+* Simplified Chinese Translation by **huqiu2**.
+* French Translation by **logounet**.
+
+## What's new?
 `Version 3.1.0` includes one more language: [📍German translation](https://github.com/genesistoxical/drop-icons/pull/6) for both the application and installer. To avoid interface issues, updates for **HandyControls** package have been disabled.
 
 <br>
@@ -129,7 +135,9 @@ The loading spinner is displayed when one or more images larger than 2MB are add
 
 <br>
 
->✨ Special thanks to **uDEV2019**, who added German translation and to **huqiu2** for adding Simplified Chinese.
+`Version 3.6.0` another translation was added (Wow, thanks): [📍French language](https://github.com/genesistoxical/drop-icons/issues/9), for app only. Option to create 512px icons in **Format** was also included [📍Please add 512 px](https://github.com/genesistoxical/drop-icons/discussions/10).
+
+Now the **Language** option unfolds and a tooltip appears when you hover over it, to show credits.
 
 ## License
 **MIT License**
@@ -139,6 +147,6 @@ Copyright (c) 2022 - 2025 Génesis Toxical ([read here](LICENSE)).
 <br>
 
 ## Related:
-`🩷 Image to Icon` Convert image to icon online: [`imagetoicon.glitch.me`](https://imagetoicon.glitch.me/) or [`Repository`](https://github.com/genesistoxical/imagetoicon).
+`🩷 Image to Icon` Convert image to icon online: [`genesistoxical.github.io/imagetoicon`](https://genesistoxical.github.io/imagetoicon/) or [`Repository`](https://github.com/genesistoxical/imagetoicon).
 
 `🩷 Pixie Folders` Set of six minimalist and editable folder icon designs: [`Download`](https://genesistoxical.github.io/pixie-folders/) or [`Repository`](https://github.com/genesistoxical/pixie-folders).

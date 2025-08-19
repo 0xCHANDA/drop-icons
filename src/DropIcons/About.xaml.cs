@@ -14,6 +14,7 @@ namespace DropIcons
     public partial class About : Window
     {
         public bool icoisOpen = false;
+        public bool lanisOpen = false;
 
         private void Win_info()
         {
@@ -73,6 +74,9 @@ namespace DropIcons
                 case "zh":
                     Lang.Content = Properties.Resources.LanguageChinese;
                     break;
+                case "fr":
+                    Lang.Content = Properties.Resources.LanguageFrench;
+                    break;
             }
             Config.RoundCorners(Backg, Border, Decoration);
             Config.Topmost(this);
@@ -81,11 +85,13 @@ namespace DropIcons
             switch (Config.format)
             {
                 case "multiple":
-                    Check_all.IsChecked = true; ;
+                    Check_all.IsChecked = true;
                     break;
-
                 case "256":
                     Check_256.IsChecked = true;
+                    break;
+                case "512":
+                    Check_512.IsChecked = true;
                     break;
             }
         }
@@ -220,27 +226,15 @@ namespace DropIcons
 
         private void Caret_Click(object sender, RoutedEventArgs e)
         {
-            // Cambiar y/o mostrar los tres lenguajes al cliquear flechitas.
-            string LangText = Lang.Content.ToString();
-
-            switch (LangText)
+            if (icoisOpen == false)
             {
-                case string _ when LangText.Contains("English"):
-                    Lang.Content = Properties.Resources.LanguageEspañol;
-                    Config.selecLan = "es";
-                    break;
-                case string _ when LangText.Contains("Español"):
-                    Lang.Content = Properties.Resources.LanguageGerman;
-                    Config.selecLan = "de";
-                    break;
-                case string _ when LangText.Contains("Deutsch"):
-                    Lang.Content = Properties.Resources.LanguageChinese;
-                    Config.selecLan = "zh";
-                    break;
-                case string _ when LangText.Contains("简体中文"):
-                    Lang.Content = Properties.Resources.LanguageEnglish;
-                    Config.selecLan = "en";
-                    break;
+                Caret.ContextMenu.IsOpen = true;
+                lanisOpen = true;
+            }
+            else
+            {
+                Caret.ContextMenu.IsOpen = false;
+                lanisOpen = false;
             }
         }
 
@@ -295,6 +289,7 @@ namespace DropIcons
         private void Check_all_Click(object sender, RoutedEventArgs e)
         {
             Check_256.IsChecked = false;
+            Check_512.IsChecked = false;
 
             if (Check_all.IsChecked == false)
                 Check_all.IsChecked = true;
@@ -305,11 +300,23 @@ namespace DropIcons
         private void Check_256_Click(object sender, RoutedEventArgs e)
         {
             Check_all.IsChecked = false;
+            Check_512.IsChecked = false;
 
             if (Check_256.IsChecked == false)
                 Check_256.IsChecked = true;
 
             Config.SetSize("256");
+        }
+
+        private void Check_512_Click(object sender, RoutedEventArgs e)
+        {
+            Check_all.IsChecked = false;
+            Check_256.IsChecked = false;
+
+            if (Check_512.IsChecked == false)
+                Check_512.IsChecked = true;
+
+            Config.SetSize("512");
         }
 
         private void Back_Next_MouseDown(object sender, MouseButtonEventArgs e)
@@ -346,5 +353,37 @@ namespace DropIcons
         {
             icoisOpen = false;
         }
+
+        #region Language click
+        private void EN_US_Click(object sender, RoutedEventArgs e)
+        {
+            Lang.Content = Properties.Resources.LanguageEnglish;
+            Config.selecLan = "en";
+        }
+
+        private void ES_419_Click(object sender, RoutedEventArgs e)
+        {
+            Lang.Content = Properties.Resources.LanguageEspañol;
+            Config.selecLan = "es";
+        }
+
+        private void DE_DE_Click(object sender, RoutedEventArgs e)
+        {
+            Lang.Content = Properties.Resources.LanguageGerman;
+            Config.selecLan = "de";
+        }
+
+        private void ZH_CH_Click(object sender, RoutedEventArgs e)
+        {
+            Lang.Content = Properties.Resources.LanguageChinese;
+            Config.selecLan = "zh";
+        }
+
+        private void FR_FR_Click(object sender, RoutedEventArgs e)
+        {
+            Lang.Content = Properties.Resources.LanguageFrench;
+            Config.selecLan = "fr";
+        }
+        #endregion
     }
 }

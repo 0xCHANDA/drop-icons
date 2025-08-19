@@ -250,6 +250,15 @@ namespace DropIcons.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Language: French.
+        /// </summary>
+        public static string LanguageFrench {
+            get {
+                return ResourceManager.GetString("LanguageFrench", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Language: Deutsch.
         /// </summary>
         public static string LanguageGerman {
@@ -313,7 +322,7 @@ namespace DropIcons.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a 3.2.0.
+        ///   Busca una cadena traducida similar a 3.6.0.
         /// </summary>
         public static string Ver {
             get {

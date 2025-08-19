@@ -65,6 +65,11 @@ namespace DropIcons
                     currentLan = "zh";
                     selecLan = "zh";
                     break;
+                case "Language = fr":
+                    Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");
+                    currentLan = "fr";
+                    selecLan = "fr";
+                    break;
             }
 
             Console.WriteLine("Current language: " + currentLan + " - Idioma actual: " + currentLan + " - Aktuelle Sprache: " + currentLan);
@@ -102,14 +107,17 @@ namespace DropIcons
                         Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("zh-CN");
                         currentLan = "zh";
                         break;
+                    case "fr":
+                        iniLines[1] = iniLines[1].Replace(currentLan, "fr");
+                        File.WriteAllLines(iniPath, iniLines);
+                        Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo("fr-FR");
+                        currentLan = "fr";
+                        break;
                 }
 
-                Console.WriteLine("Selected language: " + selecLan + " - Idioma seleccionado: " + selecLan);
+                Console.WriteLine("Selected language: " + selecLan + " - Idioma seleccionado: " + selecLan + " - Gewählte Sprache: " + selecLan);
                 restart = true;
             }
-
-            Console.WriteLine("Selected language: " + selecLan + " - Idioma seleccionado: " + selecLan + " - Gewählte Sprache: " + selecLan);
-            restart = true;
         }
         #endregion
 
@@ -205,9 +213,11 @@ namespace DropIcons
                 case "Size = multiple":
                     format = "multiple";
                     break;
-
                 case "Size = 256":
                     format = "256";
+                    break;
+                case "Size = 512":
+                    format = "512";
                     break;
             }
         }
@@ -216,17 +226,21 @@ namespace DropIcons
         {
             // Aplicar la configuración del los tamaños que se incluirán
             // en el icono y actualizar el archivo Config.ini
+            string oldSize = format;
             format = size;
 
             switch (size)
             {
                 case "multiple":
-                    iniLines[8] = iniLines[8].Replace("256", "multiple");
+                    iniLines[8] = iniLines[8].Replace(oldSize, "multiple");
                     File.WriteAllLines(iniPath, iniLines);
                     break;
-
                 case "256":
-                    iniLines[8] = iniLines[8].Replace("multiple", "256");
+                    iniLines[8] = iniLines[8].Replace(oldSize, "256");
+                    File.WriteAllLines(iniPath, iniLines);
+                    break;
+                case "512":
+                    iniLines[8] = iniLines[8].Replace(oldSize, "512");
                     File.WriteAllLines(iniPath, iniLines);
                     break;
             }

@@ -1,5 +1,5 @@
 ﻿#define MyAppName "Drop Icons"
-#define MyAppVersion "3.2.0"
+#define MyAppVersion "3.6.0"
 #define MyAppPublisher "Génesis Toxical"
 #define MyAppURL "https://genesistoxical.github.io/drop-icons/"
 #define MyAppExeName "Drop Icons.exe"
@@ -8,7 +8,7 @@
 AppId={{A072B914-4E3D-4DAD-9F9B-D1D38965482E}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
-VersionInfoVersion=3.2.0.0
+VersionInfoVersion=3.6.0.0
 AppPublisher={#MyAppPublisher}
 AppCopyright={#MyAppPublisher} © 2022 - 2025
 AppPublisherURL={#MyAppURL}
@@ -19,8 +19,8 @@ LicenseFile=Drop Icons.txt
 OutputDir=Output
 OutputBaseFilename=Drop-Icons-Installer
 SetupIconFile=..\src\DropIcons\Resources\Icon.ico
-Compression=lzma
-SolidCompression=yes
+Compression=zip
+SolidCompression=no
 WizardStyle=modern      
 WizardSmallImageFile=Wizard Small Image.bmp
 WizardImageFile=Wizard Image File.bmp

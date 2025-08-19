@@ -1,9 +1,12 @@
 Drop Icons es una aplicación para convertir imágenes a iconos (.ico) para Windows, con una función simple de arrastrar y soltar.
 
+Lenguajes Compatibles
+
+<img/>‎<img width="21" height="15" alt="US" src="https://github.com/user-attachments/assets/b5e6447c-6845-4b8d-b3df-ee45bb465706"/>‎ ‎ ‎ <img width="21" height="15" alt="MX" src="https://github.com/user-attachments/assets/0bc0851a-228a-4df2-aa0d-ba2bdc4c7b18"/>‎ ‎ ‎ <img width="21" height="15" alt="CN" src="https://github.com/user-attachments/assets/64983f24-791e-4141-a256-032940058f65"/>‎ ‎ ‎ <img width="21" height="15" alt="DE" src="https://github.com/user-attachments/assets/c07cb917-60c3-4aed-88ae-82e223ea7c49"/>‎ ‎ ‎ <img width="21" height="15" alt="FR" src="https://github.com/user-attachments/assets/14a3b116-da55-40b6-9a78-71a75fa4de4a"/>
+
 ## Características
 * Interfaz limpia e intuitiva.
 * Convierte rápidamente muchas imágenes en iconos a la vez, con la función de arrastrar y soltar.
-* Traducción al Inglés, Español, Alemán y Chino Simplificado.
 * Compatibilidad con imágenes .png .jpg .jpeg .jfif .bmp .gif y .svg
 * Personaliza el color del tema.
 * Número de las imágenes a convertir, restando tres que se muestran como vista previa.
@@ -32,7 +35,7 @@ Dando click en el botón superior de Info, aparecerá una nueva ventana en la qu
 
 - **Cambiar el idioma:** En la sección inferior **Idioma**, haz clic en el icono de las flechitas para cambiar entre English, Español o Deutsch. Por último da clic en el botón de regresar para aplicar y ver los cambios.
  
-- **Formato:** Al hacer clic en `Formato` se desplegará un menú con dos opciones para elegir los tamaños que serán incluidos dentro del icono: **Múltiple** genera un icono de alta calidad que incluye todos los tamaños necesarios como 16, 32, 48, 64, 128 y 256 pixeles, aunque sus dimensiones mostrarán solo 16px. La ultima opción es **256 px** el cual genera un icono con un solo tamaño pero luce pixelado en la vista de detalles.
+- **Formato:** Al hacer clic en `Formato` se desplegará un menú con dos opciones para elegir los tamaños que serán incluidos dentro del icono: **Múltiple** genera un icono de alta calidad que incluye todos los tamaños necesarios como 16, 32, 48, 64, 128 y 256 pixeles, aunque sus dimensiones mostrarán solo 16px. Las dos últimas opciones son **256 px** y **512 px**, las cuales generan un icono con solamente ese tamaño.
      >Nota: Si el switch **Generar icono mini** está activado, se creará un icono pequeño independientemente de su formato.
 
 - **Contenido de terceros:** En la parte izquierda están los nombres de cada librería, proyecto, iconos o tipografías que fueron utilizados, cliquea uno para leer su licencia y autor(a) o autores(as), además de una corta descripción. Puedes hacer clic sobre el icono de clip para ir al repositorio/sitio oficial de cada uno y cambiar de página con **Siguiente 🢖🢖** o **🢔🢔 Atrás**.
@@ -42,10 +45,13 @@ Dando click en el botón superior de Info, aparecerá una nueva ventana en la qu
 Para elegir que Drop Icons esté encima de todas las ventanas (Topmost) o no, da clic derecho en cualquier lugar de la ventana principal y elige Habilitar Topmost o Deshabilitar Topmost.
 
 ## Opciones
-<picture><img alt="Drop Icons" src="assets/Drop-Icons-Options-v2.gif"/></picture>
+<picture><img alt="Drop Icons" src="assets/Drop-Icons-Options-v3.gif"/></picture>
 
 ## Info
 * Drop Icons está basado en [Iconizer](https://github.com/willnode/Iconizer){:target="_blank"}. Lee más creditos [aquí](https://github.com/genesistoxical/drop-icons#credits){:target="_blank"}.
+* German Translation por **uDEV2019**.
+* Simplified Chinese Translation por **huqiu2**.
+* French Translation por **logounet**.
 * Este software se encuentra bajo **MIT License** ([leer texto completo](https://github.com/genesistoxical/drop-icons/blob/master/LICENSE){:target="_blank"}).
 * Copyright (c) 2022 - 2025 Génesis Toxical.
 <br>
