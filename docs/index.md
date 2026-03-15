@@ -53,7 +53,7 @@ To choose whether Drop Icons is on top of all windows (Topmost) or not, right-cl
 * Simplified Chinese Translation by **huqiu2**.
 * French Translation by **logounet**.
 * This software is under **MIT License** ([read full text](https://github.com/genesistoxical/drop-icons/blob/master/LICENSE){:target="_blank"}).
-* Copyright (c) 2022 - 2025 Génesis Toxical.
+* Copyright (c) 2022 - 2026 Génesis Toxical.
 <br>
 <style>
     h2.project-tagline:before {content: "Utility to convert images to icons ";}

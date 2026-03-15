@@ -139,10 +139,14 @@ Drop Icons is based on [Iconizer](https://github.com/willnode/Iconizer) under [M
 
 Now the **Language** option unfolds and a tooltip appears when you hover over it, to show credits.
 
+<br>
+
+`Version 3.6.1` fixed an issue where context menus were in the wrong position on some computers.
+
 ## License
 **MIT License**
 
-Copyright (c) 2022 - 2025 Génesis Toxical ([read here](LICENSE)).
+Copyright (c) 2022 - 2026 Génesis Toxical ([read here](LICENSE)).
 
 <br>
 

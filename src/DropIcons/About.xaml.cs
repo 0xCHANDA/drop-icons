@@ -4,7 +4,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace DropIcons
 {
@@ -226,14 +228,28 @@ namespace DropIcons
 
         private void Caret_Click(object sender, RoutedEventArgs e)
         {
+            ContextMenu menu = Caret.ContextMenu;
+
+            // Posición real del botón en pantalla.
+            Point screenPoint = Caret.PointToScreen(new Point(0, Caret.ActualHeight));
+
+            // Convertir a coordenadas WPF para mostrarse en la misma posición en cualquier PC.
+            PresentationSource source = PresentationSource.FromVisual(this);
+            Matrix m = source.CompositionTarget.TransformFromDevice;
+            Point p = m.Transform(screenPoint);
+
+            menu.Placement = PlacementMode.Absolute;
+            menu.HorizontalOffset = p.X + -5;
+            menu.VerticalOffset = p.Y + 1;
+
             if (icoisOpen == false)
             {
-                Caret.ContextMenu.IsOpen = true;
+                menu.IsOpen = true;
                 lanisOpen = true;
             }
             else
             {
-                Caret.ContextMenu.IsOpen = false;
+                menu.IsOpen = false;
                 lanisOpen = false;
             }
         }
@@ -274,14 +290,28 @@ namespace DropIcons
 
         private void Icons_Click(object sender, RoutedEventArgs e)
         {
+            ContextMenu menu = Icons.ContextMenu;
+
+            // Posición real del botón en pantalla.
+            Point screenPoint = Icons.PointToScreen(new Point(0, Icons.ActualHeight));
+
+            // Convertir a coordenadas WPF para mostrarse en la misma posición en cualquier PC.
+            PresentationSource source = PresentationSource.FromVisual(this);
+            Matrix m = source.CompositionTarget.TransformFromDevice;
+            Point p = m.Transform(screenPoint);
+
+            menu.Placement = PlacementMode.Absolute;
+            menu.HorizontalOffset = p.X + -43;
+            menu.VerticalOffset = p.Y;
+
             if (icoisOpen == false)
             {
-                Icons.ContextMenu.IsOpen = true;
+                menu.IsOpen = true;
                 icoisOpen = true;
             }
             else
             {
-                Icons.ContextMenu.IsOpen = false;
+                menu.IsOpen = false;
                 icoisOpen = false;
             }
         }
@@ -352,6 +382,15 @@ namespace DropIcons
         private void IconsMenu_Closed(object sender, RoutedEventArgs e)
         {
             icoisOpen = false;
+        }
+
+        private CustomPopupPlacement[] ToolTipPlacement(Size popupSize, Size targetSize, Point offset)
+        {
+            // Ayuda a que el Tooltip se muestre correctamente a la derecha en cualquier PC.
+            return new[]
+            {
+                new CustomPopupPlacement(new Point(targetSize.Width, 0), PopupPrimaryAxis.Horizontal)
+            };
         }
 
         #region Language click
