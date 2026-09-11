@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -23,7 +23,7 @@
         <value>[base64 mime encoded serialized .NET Framework object]</value>
     </data>
     <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <value>[base64 mime encoded string representing a byte array form of a byte array]</value>
         <comment>This is a comment</comment>
     </data>
                 
@@ -46,33 +46,31 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
     value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
-
+    
     mimetype: application/x-microsoft.net.object.bytearray.base64
     value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -87,16 +85,15 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
               <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
@@ -112,106 +109,106 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AddImages" xml:space="preserve">
-    <value>添加图</value>
+    <value>Adicionar</value>
     <comment>Translations can be just "Add"</comment>
   </data>
   <data name="Images" xml:space="preserve">
-    <value>图片</value>
+    <value>Imagens</value>
   </data>
   <data name="Image" xml:space="preserve">
-    <value>图片</value>
+    <value>Imagem</value>
   </data>
   <data name="ImageFiles" xml:space="preserve">
-    <value>图片文件</value>
+    <value>Arquivos de imagem</value>
   </data>
   <data name="ChooseSameFolder" xml:space="preserve">
-    <value>选择相同文件夹</value>
+    <value>Usar a mesma pasta</value>
   </data>
   <data name="GenerateTinyIcon" xml:space="preserve">
-    <value>生成小图标</value>
+    <value>Gerar ícone pequeno</value>
   </data>
   <data name="LanguageEnglish" xml:space="preserve">
-    <value>语言: English</value>
+    <value>Idioma: English</value>
   </data>
   <data name="ChangeTheme" xml:space="preserve">
-    <value>更改主题</value>
+    <value>Alterar tema</value>
   </data>
   <data name="Options" xml:space="preserve">
-    <value>选项:</value>
+    <value>Opções:</value>
   </data>
   <data name="About" xml:space="preserve">
-    <value>关于:</value>
+    <value>Sobre:</value>
   </data>
   <data name="LanguageEspañol" xml:space="preserve">
-    <value>语言: Español</value>
+    <value>Idioma: Español</value>
   </data>
   <data name="UtilityToConvertImagesToIcons" xml:space="preserve">
-    <value>将图片转换为图标的工具 (.ico)</value>
+    <value>Utilitário para converter imagens em ícones (.ico)</value>
   </data>
   <data name="onvert" xml:space="preserve">
-    <value></value>
+    <value>onverter</value>
     <comment>"Convert" without the first letter</comment>
   </data>
   <data name="pply" xml:space="preserve">
-    <value>应用</value>
+    <value>plicar</value>
     <comment>"Apply" without the first letter</comment>
   </data>
   <data name="ancel" xml:space="preserve">
-    <value>取消</value>
+    <value>ancelar</value>
     <comment>"Cancel" without the first letter</comment>
   </data>
   <data name="AboutTitle" xml:space="preserve">
-    <value>关于</value>
+    <value>Sobre</value>
   </data>
   <data name="DisableTopmost" xml:space="preserve">
-    <value>禁用置顶</value>
+    <value>Desativar sempre no topo</value>
   </data>
   <data name="EnableTopmost" xml:space="preserve">
-    <value>启用置顶</value>
+    <value>Ativar sempre no topo</value>
   </data>
   <data name="Icons" xml:space="preserve">
-    <value>格式</value>
+    <value>Formato</value>
   </data>
   <data name="Next" xml:space="preserve">
-    <value>下一步   🢖🢖</value>
+    <value>Avançar   🢖🢖</value>
   </data>
   <data name="Back" xml:space="preserve">
-    <value>🢔🢔   上一步</value>
+    <value>🢔🢔   Voltar</value>
   </data>
   <data name="Multiple" xml:space="preserve">
-    <value>多个</value>
+    <value>Múltiplos</value>
   </data>
   <data name="LanguageGerman" xml:space="preserve">
-    <value>语言: Deutsch</value>
+    <value>Idioma: Deutsch</value>
   </data>
   <data name="C_onvert" xml:space="preserve">
-    <value>转换</value>
+    <value>C</value>
     <comment>First letter of "Convert"</comment>
   </data>
   <data name="C_ancel" xml:space="preserve">
-    <value></value>
+    <value>C</value>
     <comment>First letter of "Cancel"</comment>
   </data>
   <data name="A_pply" xml:space="preserve">
-    <value></value>
+    <value>A</value>
     <comment>First letter of "Apply"</comment>
   </data>
   <data name="Color" xml:space="preserve">
-    <value>颜色</value>
+    <value>Cor</value>
   </data>
   <data name="LanguageChinese" xml:space="preserve">
-    <value>语言: 简体中文</value>
+    <value>Idioma: 简体中文</value>
   </data>
   <data name="LanguageFrench" xml:space="preserve">
-    <value>语言: French</value>
+    <value>Idioma: French</value>
   </data>
   <data name="LanguagePortuguese" xml:space="preserve">
-    <value>语言: Português (Brasil)</value>
+    <value>Idioma: Português (Brasil)</value>
   </data>
 </root>
